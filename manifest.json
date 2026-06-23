@@ -1,7 +1,7 @@
 {
   "name": "cortex-plugin-academic-research",
-  "version": "1.0.0",
-  "description": "Academic Literature Miner — arXiv/Semantic Scholar/PubMed/Google Scholar search with paper comparison and lit review generation",
+  "version": "1.0.1",
+  "description": "Academic Literature Miner \u2014 arXiv/Semantic Scholar/PubMed/Google Scholar search with paper comparison and lit review generation",
   "kind": "esm",
   "entryPoint": "mod.ts",
   "runtime": "deno",
@@ -9,7 +9,10 @@
   "license": "MIT",
   "repository": "https://github.com/CortexPrism/cortex-plugin-academic-research",
   "homepage": "https://cortexprism.io/marketplace/plugins/academic-research",
-  "capabilities": ["tools", "network:fetch"],
+  "capabilities": [
+    "tools",
+    "network:fetch"
+  ],
   "tools": [
     {
       "name": "academic_search",
@@ -21,10 +24,25 @@
       "description": "Compare multiple papers on same topic",
       "params": []
     },
-    { "name": "academic_extract", "description": "Extract methodology and findings", "params": [] },
-    { "name": "academic_lit_review", "description": "Generate literature review", "params": [] }
+    {
+      "name": "academic_extract",
+      "description": "Extract methodology and findings",
+      "params": []
+    },
+    {
+      "name": "academic_lit_review",
+      "description": "Generate literature review",
+      "params": []
+    }
   ],
   "dependencies": {},
-  "peerDependencies": { "cortex": ">=1.0.0" },
-  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+  "peerDependencies": {
+    "cortex": ">=0.51.0"
+  },
+  "aiDisclosure": {
+    "tools": [
+      "Kilo (DeepSeek) \u2014 batch scaffold"
+    ],
+    "humanReview": true
+  }
 }
